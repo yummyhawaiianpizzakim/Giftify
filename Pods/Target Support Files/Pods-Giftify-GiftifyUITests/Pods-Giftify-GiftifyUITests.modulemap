@@ -1,0 +1,6 @@
+framework module Pods_Giftify_GiftifyUITests {
+  umbrella header "Pods-Giftify-GiftifyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
