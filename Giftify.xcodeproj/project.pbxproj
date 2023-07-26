@@ -32,6 +32,13 @@
 		E91527A72A6FC31D00274430 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527A62A6FC31D00274430 /* SettingCoordinator.swift */; };
 		E91527A92A6FC32700274430 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527A82A6FC32700274430 /* SettingViewController.swift */; };
 		E91527AB2A6FC33100274430 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527AA2A6FC33100274430 /* SettingViewModel.swift */; };
+		E91527AE2A6FCC4500274430 /* NearSortHomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527AD2A6FCC4500274430 /* NearSortHomeCollectionCell.swift */; };
+		E91527B22A6FD34800274430 /* NearSortHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527B12A6FD34800274430 /* NearSortHeaderView.swift */; };
+		E91527B52A6FD81000274430 /* CollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527B42A6FD81000274430 /* CollectionLayout.swift */; };
+		E91527B92A6FDA9800274430 /* MainSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527B82A6FDA9800274430 /* MainSection.swift */; };
+		E91527BB2A6FE44E00274430 /* Gifticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527BA2A6FE44E00274430 /* Gifticon.swift */; };
+		E91527BD2A7012F400274430 /* DDaySortHomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527BC2A7012F400274430 /* DDaySortHomeCollectionCell.swift */; };
+		E91527BF2A7029B000274430 /* DDaySortHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527BE2A7029B000274430 /* DDaySortHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +94,13 @@
 		E91527A62A6FC31D00274430 /* SettingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCoordinator.swift; sourceTree = "<group>"; };
 		E91527A82A6FC32700274430 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E91527AA2A6FC33100274430 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		E91527AD2A6FCC4500274430 /* NearSortHomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearSortHomeCollectionCell.swift; sourceTree = "<group>"; };
+		E91527B12A6FD34800274430 /* NearSortHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearSortHeaderView.swift; sourceTree = "<group>"; };
+		E91527B42A6FD81000274430 /* CollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLayout.swift; sourceTree = "<group>"; };
+		E91527B82A6FDA9800274430 /* MainSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSection.swift; sourceTree = "<group>"; };
+		E91527BA2A6FE44E00274430 /* Gifticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gifticon.swift; sourceTree = "<group>"; };
+		E91527BC2A7012F400274430 /* DDaySortHomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDaySortHomeCollectionCell.swift; sourceTree = "<group>"; };
+		E91527BE2A7029B000274430 /* DDaySortHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDaySortHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				E91527822A6FB96B00274430 /* Application */,
+				E91527B62A6FDA7E00274430 /* Domain */,
 				E91527892A6FBB0100274430 /* Presentation */,
 				E91527582A6FB76F00274430 /* Main.storyboard */,
 				E915275B2A6FB77200274430 /* Assets.xcassets */,
@@ -219,6 +234,7 @@
 		E915278A2A6FBB1D00274430 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E91527B32A6FD7FB00274430 /* View */,
 				E915278B2A6FBB2700274430 /* Coordinator */,
 			);
 			path = Common;
@@ -235,6 +251,7 @@
 		E915278E2A6FBEBB00274430 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E91527AC2A6FCC0900274430 /* View */,
 				E91527912A6FBED000274430 /* ViewModel */,
 				E91527902A6FBEC900274430 /* ViewController */,
 				E915278F2A6FBEC400274430 /* Coordinator */,
@@ -332,6 +349,42 @@
 				E91527AA2A6FC33100274430 /* SettingViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E91527AC2A6FCC0900274430 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E91527AD2A6FCC4500274430 /* NearSortHomeCollectionCell.swift */,
+				E91527B12A6FD34800274430 /* NearSortHeaderView.swift */,
+				E91527BC2A7012F400274430 /* DDaySortHomeCollectionCell.swift */,
+				E91527BE2A7029B000274430 /* DDaySortHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E91527B32A6FD7FB00274430 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E91527B42A6FD81000274430 /* CollectionLayout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E91527B62A6FDA7E00274430 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E91527B72A6FDA8600274430 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E91527B72A6FDA8600274430 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E91527B82A6FDA9800274430 /* MainSection.swift */,
+				E91527BA2A6FE44E00274430 /* Gifticon.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,20 +627,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				E91527882A6FBAAA00274430 /* AppCoordinator.swift in Sources */,
+				E91527BD2A7012F400274430 /* DDaySortHomeCollectionCell.swift in Sources */,
 				E91527842A6FB99600274430 /* DIContainer.swift in Sources */,
 				E91527A32A6FC30600274430 /* ListViewController.swift in Sources */,
 				E91527A72A6FC31D00274430 /* SettingCoordinator.swift in Sources */,
 				E91527572A6FB76F00274430 /* ViewController.swift in Sources */,
 				E91527A92A6FC32700274430 /* SettingViewController.swift in Sources */,
+				E91527BF2A7029B000274430 /* DDaySortHeaderView.swift in Sources */,
 				E915279F2A6FBFD000274430 /* HomeViewModel.swift in Sources */,
 				E915278D2A6FBB4800274430 /* TabBarCoordinator.swift in Sources */,
+				E91527BB2A6FE44E00274430 /* Gifticon.swift in Sources */,
 				E91527862A6FBA2D00274430 /* CoordinatorProtocol.swift in Sources */,
+				E91527AE2A6FCC4500274430 /* NearSortHomeCollectionCell.swift in Sources */,
 				E915279D2A6FBF7400274430 /* HomeViewController.swift in Sources */,
+				E91527B22A6FD34800274430 /* NearSortHeaderView.swift in Sources */,
 				E91527A12A6FC2BA00274430 /* ListCoordinator.swift in Sources */,
 				E91527AB2A6FC33100274430 /* SettingViewModel.swift in Sources */,
+				E91527B52A6FD81000274430 /* CollectionLayout.swift in Sources */,
 				E91527A52A6FC31000274430 /* ListViewModel.swift in Sources */,
 				E915279B2A6FBF1D00274430 /* HomeCoordinator.swift in Sources */,
 				E91527532A6FB76F00274430 /* AppDelegate.swift in Sources */,
+				E91527B92A6FDA9800274430 /* MainSection.swift in Sources */,
 				E91527552A6FB76F00274430 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
