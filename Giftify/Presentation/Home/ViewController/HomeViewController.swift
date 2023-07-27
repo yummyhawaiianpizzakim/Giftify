@@ -12,13 +12,12 @@ import RxSwift
 import RxRelay
 import RxCocoa
 
-
 class HomeViewController: UIViewController {
     var viewModel: HomeViewModel?
     let disposeBag = DisposeBag()
     
-    typealias DataSource = UICollectionViewDiffableDataSource<MainSection, MainSection.Item>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<MainSection, MainSection.Item>
+    typealias DataSource = UICollectionViewDiffableDataSource<HomeSection, HomeSection.Item>
+    typealias Snapshot = NSDiffableDataSourceSnapshot<HomeSection, HomeSection.Item>
     
     var dataSource: DataSource?
     

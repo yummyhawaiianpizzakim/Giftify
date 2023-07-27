@@ -11,7 +11,7 @@ enum CoordinatorType {
     case app
     case tab
     case home, list, setting
-    case detail
+    case addGifticon
     case signIn, signUp
 }
 

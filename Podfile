@@ -9,10 +9,11 @@ target 'Giftify' do
   pod 'SnapKit'
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'RxDataSources'
   pod 'Alamofire'
   pod 'Kingfisher'
   pod 'Swinject'
+  pod 'GoogleMLKit/TextRecognition'
+  pod 'GoogleMLKit/TextRecognitionKorean'
 
 
      post_install do |installer|
@@ -23,8 +24,10 @@ target 'Giftify' do
                     end
                end
         end
+	installer.pods_project.build_configurations.each do |config|
+    		config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+  	end
      end
-
 
 
   target 'GiftifyTests' do

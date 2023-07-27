@@ -35,10 +35,15 @@
 		E91527AE2A6FCC4500274430 /* NearSortHomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527AD2A6FCC4500274430 /* NearSortHomeCollectionCell.swift */; };
 		E91527B22A6FD34800274430 /* NearSortHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527B12A6FD34800274430 /* NearSortHeaderView.swift */; };
 		E91527B52A6FD81000274430 /* CollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527B42A6FD81000274430 /* CollectionLayout.swift */; };
-		E91527B92A6FDA9800274430 /* MainSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527B82A6FDA9800274430 /* MainSection.swift */; };
+		E91527B92A6FDA9800274430 /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527B82A6FDA9800274430 /* HomeSection.swift */; };
 		E91527BB2A6FE44E00274430 /* Gifticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527BA2A6FE44E00274430 /* Gifticon.swift */; };
 		E91527BD2A7012F400274430 /* DDaySortHomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527BC2A7012F400274430 /* DDaySortHomeCollectionCell.swift */; };
 		E91527BF2A7029B000274430 /* DDaySortHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527BE2A7029B000274430 /* DDaySortHeaderView.swift */; };
+		E91527C52A71031300274430 /* AddGifticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527C42A71031300274430 /* AddGifticonViewModel.swift */; };
+		E91527C72A71033000274430 /* AddGifticonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527C62A71033000274430 /* AddGifticonViewController.swift */; };
+		E91527C92A7107C600274430 /* AddGifticonCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527C82A7107C600274430 /* AddGifticonCoordinator.swift */; };
+		E91527CC2A7129D600274430 /* MLKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527CB2A7129D600274430 /* MLKit.swift */; };
+		E91527CE2A712B5A00274430 /* testImageBBQ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E91527CD2A712B5A00274430 /* testImageBBQ.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,10 +102,15 @@
 		E91527AD2A6FCC4500274430 /* NearSortHomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearSortHomeCollectionCell.swift; sourceTree = "<group>"; };
 		E91527B12A6FD34800274430 /* NearSortHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearSortHeaderView.swift; sourceTree = "<group>"; };
 		E91527B42A6FD81000274430 /* CollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLayout.swift; sourceTree = "<group>"; };
-		E91527B82A6FDA9800274430 /* MainSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSection.swift; sourceTree = "<group>"; };
+		E91527B82A6FDA9800274430 /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		E91527BA2A6FE44E00274430 /* Gifticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gifticon.swift; sourceTree = "<group>"; };
 		E91527BC2A7012F400274430 /* DDaySortHomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDaySortHomeCollectionCell.swift; sourceTree = "<group>"; };
 		E91527BE2A7029B000274430 /* DDaySortHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDaySortHeaderView.swift; sourceTree = "<group>"; };
+		E91527C42A71031300274430 /* AddGifticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGifticonViewModel.swift; sourceTree = "<group>"; };
+		E91527C62A71033000274430 /* AddGifticonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGifticonViewController.swift; sourceTree = "<group>"; };
+		E91527C82A7107C600274430 /* AddGifticonCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGifticonCoordinator.swift; sourceTree = "<group>"; };
+		E91527CB2A7129D600274430 /* MLKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKit.swift; sourceTree = "<group>"; };
+		E91527CD2A712B5A00274430 /* testImageBBQ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImageBBQ.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,11 +189,13 @@
 		E91527512A6FB76F00274430 /* Giftify */ = {
 			isa = PBXGroup;
 			children = (
+				E91527CA2A7129BD00274430 /* InfraStructure */,
 				E91527822A6FB96B00274430 /* Application */,
 				E91527B62A6FDA7E00274430 /* Domain */,
 				E91527892A6FBB0100274430 /* Presentation */,
 				E91527582A6FB76F00274430 /* Main.storyboard */,
 				E915275B2A6FB77200274430 /* Assets.xcassets */,
+				E91527CD2A712B5A00274430 /* testImageBBQ.jpeg */,
 				E915275D2A6FB77200274430 /* LaunchScreen.storyboard */,
 				E91527602A6FB77200274430 /* Info.plist */,
 			);
@@ -223,6 +235,7 @@
 		E91527892A6FBB0100274430 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E91527C02A71004100274430 /* AddGifticon */,
 				E91527962A6FBF0000274430 /* Setting */,
 				E91527922A6FBEE300274430 /* List */,
 				E915278E2A6FBEBB00274430 /* Home */,
@@ -381,10 +394,52 @@
 		E91527B72A6FDA8600274430 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E91527B82A6FDA9800274430 /* MainSection.swift */,
+				E91527B82A6FDA9800274430 /* HomeSection.swift */,
 				E91527BA2A6FE44E00274430 /* Gifticon.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E91527C02A71004100274430 /* AddGifticon */ = {
+			isa = PBXGroup;
+			children = (
+				E91527C32A71006C00274430 /* ViewModel */,
+				E91527C22A71006600274430 /* ViewController */,
+				E91527C12A71005A00274430 /* Coordinator */,
+			);
+			path = AddGifticon;
+			sourceTree = "<group>";
+		};
+		E91527C12A71005A00274430 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E91527C82A7107C600274430 /* AddGifticonCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E91527C22A71006600274430 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E91527C62A71033000274430 /* AddGifticonViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E91527C32A71006C00274430 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E91527C42A71031300274430 /* AddGifticonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E91527CA2A7129BD00274430 /* InfraStructure */ = {
+			isa = PBXGroup;
+			children = (
+				E91527CB2A7129D600274430 /* MLKit.swift */,
+			);
+			path = InfraStructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +454,7 @@
 				E915274C2A6FB76F00274430 /* Frameworks */,
 				E915274D2A6FB76F00274430 /* Resources */,
 				773F88AFB08CA70FE9306F22 /* [CP] Embed Pods Frameworks */,
+				C12E9428A706EBDF74599940 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -437,6 +493,7 @@
 				E915276C2A6FB77200274430 /* Frameworks */,
 				E915276D2A6FB77200274430 /* Resources */,
 				82D0B68E527357312A98B22A /* [CP] Embed Pods Frameworks */,
+				9841170CF2B8020A0DBBFF92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -497,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E915275F2A6FB77200274430 /* LaunchScreen.storyboard in Resources */,
+				E91527CE2A712B5A00274430 /* testImageBBQ.jpeg in Resources */,
 				E915275C2A6FB77200274430 /* Assets.xcassets in Resources */,
 				E915275A2A6FB76F00274430 /* Main.storyboard in Resources */,
 			);
@@ -597,6 +655,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Giftify-GiftifyUITests/Pods-Giftify-GiftifyUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9841170CF2B8020A0DBBFF92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Giftify-GiftifyUITests/Pods-Giftify-GiftifyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Giftify-GiftifyUITests/Pods-Giftify-GiftifyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Giftify-GiftifyUITests/Pods-Giftify-GiftifyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AA15946E99612E7BBCD0AA2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -619,6 +694,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C12E9428A706EBDF74599940 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Giftify/Pods-Giftify-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Giftify/Pods-Giftify-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Giftify/Pods-Giftify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -629,7 +721,10 @@
 				E91527882A6FBAAA00274430 /* AppCoordinator.swift in Sources */,
 				E91527BD2A7012F400274430 /* DDaySortHomeCollectionCell.swift in Sources */,
 				E91527842A6FB99600274430 /* DIContainer.swift in Sources */,
+				E91527C72A71033000274430 /* AddGifticonViewController.swift in Sources */,
+				E91527CC2A7129D600274430 /* MLKit.swift in Sources */,
 				E91527A32A6FC30600274430 /* ListViewController.swift in Sources */,
+				E91527C92A7107C600274430 /* AddGifticonCoordinator.swift in Sources */,
 				E91527A72A6FC31D00274430 /* SettingCoordinator.swift in Sources */,
 				E91527572A6FB76F00274430 /* ViewController.swift in Sources */,
 				E91527A92A6FC32700274430 /* SettingViewController.swift in Sources */,
@@ -639,6 +734,7 @@
 				E91527BB2A6FE44E00274430 /* Gifticon.swift in Sources */,
 				E91527862A6FBA2D00274430 /* CoordinatorProtocol.swift in Sources */,
 				E91527AE2A6FCC4500274430 /* NearSortHomeCollectionCell.swift in Sources */,
+				E91527C52A71031300274430 /* AddGifticonViewModel.swift in Sources */,
 				E915279D2A6FBF7400274430 /* HomeViewController.swift in Sources */,
 				E91527B22A6FD34800274430 /* NearSortHeaderView.swift in Sources */,
 				E91527A12A6FC2BA00274430 /* ListCoordinator.swift in Sources */,
@@ -647,7 +743,7 @@
 				E91527A52A6FC31000274430 /* ListViewModel.swift in Sources */,
 				E915279B2A6FBF1D00274430 /* HomeCoordinator.swift in Sources */,
 				E91527532A6FB76F00274430 /* AppDelegate.swift in Sources */,
-				E91527B92A6FDA9800274430 /* MainSection.swift in Sources */,
+				E91527B92A6FDA9800274430 /* HomeSection.swift in Sources */,
 				E91527552A6FB76F00274430 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

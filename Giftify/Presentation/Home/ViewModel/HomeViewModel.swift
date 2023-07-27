@@ -9,10 +9,16 @@ import Foundation
 import RxSwift
 import RxRelay
 
-typealias MainDataSource = [MainSection: [MainSection.Item]]
+struct HomeViewModelActions {
+    let showAddGifticonView: () -> Void
+}
+
+typealias MainDataSource = [HomeSection: [HomeSection.Item]]
 
 class HomeViewModel {
     let disposeBag = DisposeBag()
+    
+    var actions: HomeViewModelActions?
     
     let mockGifticons = BehaviorRelay<[Gifticon]>(value: [Gifticon(
         id: "",
@@ -39,8 +45,18 @@ class HomeViewModel {
         let dataSources = BehaviorRelay<[MainDataSource]>(value: [])
     }
     
+    func setActions(actions: HomeViewModelActions) {
+        self.actions = actions
+    }
+    
     func transform(input: Input) -> Output {
         let output = Output()
+        
+        input.didTapAddGifticonButton
+            .subscribe { _ in
+                self.actions?.showAddGifticonView()
+            }
+            .disposed(by: self.disposeBag)
         
         self.mockGifticons
             .withUnretained(self)
@@ -85,15 +101,15 @@ private extension HomeViewModel {
     
     func mappingNearDataSurce(gifticons: [Gifticon]) -> MainDataSource {
         if gifticons.isEmpty {
-            return [MainSection.near: []]
+            return [HomeSection.near: []]
         }
-        return [MainSection.near: updateGifticonState(gifticons: gifticons).map( { MainSection.Item.near($0) } )]
+        return [HomeSection.near: updateGifticonState(gifticons: gifticons).map( { HomeSection.Item.near($0) } )]
     }
     
     func mappingDDayDataSurce(gifticons: [Gifticon]) -> MainDataSource {
         if gifticons.isEmpty {
-            return [MainSection.dDay: []]
+            return [HomeSection.dDay: []]
         }
-        return [MainSection.dDay: updateGifticonState(gifticons: gifticons).map( { MainSection.Item.dDay($0) } )]
+        return [HomeSection.dDay: updateGifticonState(gifticons: gifticons).map( { HomeSection.Item.dDay($0) } )]
     }
 }

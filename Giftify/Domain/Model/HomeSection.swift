@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum MainSection: Int, Hashable {
+enum HomeSection: Int, Hashable {
     
     case near
     case dDay
