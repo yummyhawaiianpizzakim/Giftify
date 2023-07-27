@@ -37,6 +37,7 @@ class DIContainer {
         self.registerHomeViewModel()
         self.registerListViewModel()
         self.registerSettingViewModel()
+        self.registerAddGifticonViewModel()
     }
 }
 
@@ -74,6 +75,13 @@ extension DIContainer {
     func registerSettingViewModel() {
         self.container.register(SettingViewModel.self) { resolver in
             return SettingViewModel()
+        }
+        .inObjectScope(.graph)
+    }
+    
+    func registerAddGifticonViewModel() {
+        self.container.register(AddGifticonViewModel.self) { resolver in
+            return AddGifticonViewModel()
         }
         .inObjectScope(.graph)
     }

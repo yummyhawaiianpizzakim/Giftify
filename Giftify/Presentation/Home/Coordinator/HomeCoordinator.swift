@@ -32,13 +32,22 @@ class HomeCoordinator: CoordinatorProtocol {
         
         let vc = HomeViewController(viewModel: vm)
         
-//        vm.setActions(
-//            actions: PhotoListViewModelActions(
-//                showPhotoDetail: self.showPhotoDetail
-//            )
-//        )
+        vm.setActions(
+            actions: HomeViewModelActions(
+                showAddGifticonView: self.showAddGifticonView
+            )
+        )
         
         self.navigation.pushViewController(vc, animated: true)
+    }
+    
+    lazy var showAddGifticonView: () -> Void = { [weak self] in
+//        let navigation = UINavigationController()
+        let addGifticonCoordinator = AddGifticonCoordinator(navigation: self!.navigation)
+        addGifticonCoordinator.finishDelegate = self
+        self?.childCoordinators.append(addGifticonCoordinator)
+        addGifticonCoordinator.start()
+        
     }
     
 //    lazy var showPhotoDetail: (_ IndexPath: IndexPath) -> Void = { [weak self] indexPath in
