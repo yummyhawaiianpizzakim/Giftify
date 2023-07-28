@@ -21,6 +21,10 @@ class AddGifticonCoordinator: CoordinatorProtocol {
         self.navigation = navigation
     }
     
+    init() {
+        self.navigation = .init()
+    }
+    
     func start() {
         self.showAddGifticonView()
     }
@@ -31,8 +35,8 @@ private extension AddGifticonCoordinator {
         let container = DIContainer.shared.container
         guard let vm = container.resolve(AddGifticonViewModel.self) else { return }
         let vc = AddGifticonViewController(viewModel: vm)
-        self.navigation.modalPresentationStyle = .fullScreen
-        self.navigation.present(vc, animated: true)
-//        self.navigation.pushViewController(vc, animated: true)
+//        self.navigation.modalPresentationStyle = .fullScreen
+//        self.navigation.present(vc, animated: true)
+        self.navigation.pushViewController(vc, animated: true)
     }
 }

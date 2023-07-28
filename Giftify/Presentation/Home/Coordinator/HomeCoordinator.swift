@@ -44,6 +44,7 @@ class HomeCoordinator: CoordinatorProtocol {
     lazy var showAddGifticonView: () -> Void = { [weak self] in
 //        let navigation = UINavigationController()
         let addGifticonCoordinator = AddGifticonCoordinator(navigation: self!.navigation)
+//        let addGifticonCoordinator = AddGifticonCoordinator()
         addGifticonCoordinator.finishDelegate = self
         self?.childCoordinators.append(addGifticonCoordinator)
         addGifticonCoordinator.start()
