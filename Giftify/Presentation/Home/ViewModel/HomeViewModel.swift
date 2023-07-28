@@ -13,7 +13,7 @@ struct HomeViewModelActions {
     let showAddGifticonView: () -> Void
 }
 
-typealias MainDataSource = [HomeSection: [HomeSection.Item]]
+typealias HomeDataSource = [HomeSection: [HomeSection.Item]]
 
 class HomeViewModel {
     let disposeBag = DisposeBag()
@@ -42,7 +42,7 @@ class HomeViewModel {
     }
     
     struct Output {
-        let dataSources = BehaviorRelay<[MainDataSource]>(value: [])
+        let dataSources = BehaviorRelay<[HomeDataSource]>(value: [])
     }
     
     func setActions(actions: HomeViewModelActions) {
@@ -71,7 +71,7 @@ class HomeViewModel {
 }
 
 private extension HomeViewModel {
-    func mappingDataSource(gifticons: [Gifticon]) -> [MainDataSource] {
+    func mappingDataSource(gifticons: [Gifticon]) -> [HomeDataSource] {
         return [mappingNearDataSurce(gifticons: gifticons)] + [mappingDDayDataSurce(gifticons: gifticons)]
     }
     
@@ -99,14 +99,14 @@ private extension HomeViewModel {
 //        return [UserSection.profile: [UserSection.Item.profile(user)]]
 //    }
     
-    func mappingNearDataSurce(gifticons: [Gifticon]) -> MainDataSource {
+    func mappingNearDataSurce(gifticons: [Gifticon]) -> HomeDataSource {
         if gifticons.isEmpty {
             return [HomeSection.near: []]
         }
         return [HomeSection.near: updateGifticonState(gifticons: gifticons).map( { HomeSection.Item.near($0) } )]
     }
     
-    func mappingDDayDataSurce(gifticons: [Gifticon]) -> MainDataSource {
+    func mappingDDayDataSurce(gifticons: [Gifticon]) -> HomeDataSource {
         if gifticons.isEmpty {
             return [HomeSection.dDay: []]
         }

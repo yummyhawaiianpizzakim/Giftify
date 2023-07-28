@@ -10,6 +10,12 @@
 		4CC6C7F06FD99CFF1D287E7E /* Pods_Giftify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F1FE6140FDE4F0B5826BBB /* Pods_Giftify.framework */; };
 		6E1B7D2487171FC492598508 /* Pods_GiftifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD49282CB039E84BBCCAC5F4 /* Pods_GiftifyTests.framework */; };
 		C4F9A8DD19E38674315B6531 /* Pods_Giftify_GiftifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FC5C6801924F6FFDB1CF2 /* Pods_Giftify_GiftifyUITests.framework */; };
+		E90E63DD2A724CD9002A71B6 /* AddGifticonImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63DC2A724CD9002A71B6 /* AddGifticonImageCollectionCell.swift */; };
+		E90E63DF2A72513D002A71B6 /* AddGifticonPlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63DE2A72513D002A71B6 /* AddGifticonPlaceHolderView.swift */; };
+		E90E63E12A7252E3002A71B6 /* AddGifticonSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63E02A7252E3002A71B6 /* AddGifticonSection.swift */; };
+		E90E63E32A725976002A71B6 /* GifticonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63E22A725976002A71B6 /* GifticonImage.swift */; };
+		E90E63E52A7263CE002A71B6 /* AddGifticonCollectionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63E42A7263CE002A71B6 /* AddGifticonCollectionButtonCell.swift */; };
+		E90E63E72A73A404002A71B6 /* AddGiftiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63E62A73A404002A71B6 /* AddGiftiTextView.swift */; };
 		E91527532A6FB76F00274430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527522A6FB76F00274430 /* AppDelegate.swift */; };
 		E91527552A6FB76F00274430 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527542A6FB76F00274430 /* SceneDelegate.swift */; };
 		E91527572A6FB76F00274430 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527562A6FB76F00274430 /* ViewController.swift */; };
@@ -73,6 +79,12 @@
 		D8F1FE6140FDE4F0B5826BBB /* Pods_Giftify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giftify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD49282CB039E84BBCCAC5F4 /* Pods_GiftifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiftifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29B1B827259000A661BE3BE /* Pods-Giftify-GiftifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giftify-GiftifyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Giftify-GiftifyUITests/Pods-Giftify-GiftifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E90E63DC2A724CD9002A71B6 /* AddGifticonImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGifticonImageCollectionCell.swift; sourceTree = "<group>"; };
+		E90E63DE2A72513D002A71B6 /* AddGifticonPlaceHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGifticonPlaceHolderView.swift; sourceTree = "<group>"; };
+		E90E63E02A7252E3002A71B6 /* AddGifticonSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGifticonSection.swift; sourceTree = "<group>"; };
+		E90E63E22A725976002A71B6 /* GifticonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifticonImage.swift; sourceTree = "<group>"; };
+		E90E63E42A7263CE002A71B6 /* AddGifticonCollectionButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGifticonCollectionButtonCell.swift; sourceTree = "<group>"; };
+		E90E63E62A73A404002A71B6 /* AddGiftiTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGiftiTextView.swift; sourceTree = "<group>"; };
 		E915274F2A6FB76F00274430 /* Giftify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giftify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91527522A6FB76F00274430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E91527542A6FB76F00274430 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +174,17 @@
 				3B6002B244FC4A831E079C52 /* Pods-GiftifyTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E90E63DB2A724CB2002A71B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E90E63DC2A724CD9002A71B6 /* AddGifticonImageCollectionCell.swift */,
+				E90E63DE2A72513D002A71B6 /* AddGifticonPlaceHolderView.swift */,
+				E90E63E42A7263CE002A71B6 /* AddGifticonCollectionButtonCell.swift */,
+				E90E63E62A73A404002A71B6 /* AddGiftiTextView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E91527462A6FB76F00274430 = {
@@ -396,6 +419,8 @@
 			children = (
 				E91527B82A6FDA9800274430 /* HomeSection.swift */,
 				E91527BA2A6FE44E00274430 /* Gifticon.swift */,
+				E90E63E02A7252E3002A71B6 /* AddGifticonSection.swift */,
+				E90E63E22A725976002A71B6 /* GifticonImage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,6 +428,7 @@
 		E91527C02A71004100274430 /* AddGifticon */ = {
 			isa = PBXGroup;
 			children = (
+				E90E63DB2A724CB2002A71B6 /* View */,
 				E91527C32A71006C00274430 /* ViewModel */,
 				E91527C22A71006600274430 /* ViewController */,
 				E91527C12A71005A00274430 /* Coordinator */,
@@ -454,7 +480,6 @@
 				E915274C2A6FB76F00274430 /* Frameworks */,
 				E915274D2A6FB76F00274430 /* Resources */,
 				773F88AFB08CA70FE9306F22 /* [CP] Embed Pods Frameworks */,
-				C12E9428A706EBDF74599940 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -493,7 +518,6 @@
 				E915276C2A6FB77200274430 /* Frameworks */,
 				E915276D2A6FB77200274430 /* Resources */,
 				82D0B68E527357312A98B22A /* [CP] Embed Pods Frameworks */,
-				9841170CF2B8020A0DBBFF92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -655,23 +679,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Giftify-GiftifyUITests/Pods-Giftify-GiftifyUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9841170CF2B8020A0DBBFF92 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Giftify-GiftifyUITests/Pods-Giftify-GiftifyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Giftify-GiftifyUITests/Pods-Giftify-GiftifyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Giftify-GiftifyUITests/Pods-Giftify-GiftifyUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AA15946E99612E7BBCD0AA2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -694,23 +701,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C12E9428A706EBDF74599940 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Giftify/Pods-Giftify-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Giftify/Pods-Giftify-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Giftify/Pods-Giftify-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -722,6 +712,7 @@
 				E91527BD2A7012F400274430 /* DDaySortHomeCollectionCell.swift in Sources */,
 				E91527842A6FB99600274430 /* DIContainer.swift in Sources */,
 				E91527C72A71033000274430 /* AddGifticonViewController.swift in Sources */,
+				E90E63E52A7263CE002A71B6 /* AddGifticonCollectionButtonCell.swift in Sources */,
 				E91527CC2A7129D600274430 /* MLKit.swift in Sources */,
 				E91527A32A6FC30600274430 /* ListViewController.swift in Sources */,
 				E91527C92A7107C600274430 /* AddGifticonCoordinator.swift in Sources */,
@@ -731,16 +722,21 @@
 				E91527BF2A7029B000274430 /* DDaySortHeaderView.swift in Sources */,
 				E915279F2A6FBFD000274430 /* HomeViewModel.swift in Sources */,
 				E915278D2A6FBB4800274430 /* TabBarCoordinator.swift in Sources */,
+				E90E63E72A73A404002A71B6 /* AddGiftiTextView.swift in Sources */,
 				E91527BB2A6FE44E00274430 /* Gifticon.swift in Sources */,
 				E91527862A6FBA2D00274430 /* CoordinatorProtocol.swift in Sources */,
 				E91527AE2A6FCC4500274430 /* NearSortHomeCollectionCell.swift in Sources */,
 				E91527C52A71031300274430 /* AddGifticonViewModel.swift in Sources */,
 				E915279D2A6FBF7400274430 /* HomeViewController.swift in Sources */,
+				E90E63DD2A724CD9002A71B6 /* AddGifticonImageCollectionCell.swift in Sources */,
+				E90E63E32A725976002A71B6 /* GifticonImage.swift in Sources */,
 				E91527B22A6FD34800274430 /* NearSortHeaderView.swift in Sources */,
+				E90E63E12A7252E3002A71B6 /* AddGifticonSection.swift in Sources */,
 				E91527A12A6FC2BA00274430 /* ListCoordinator.swift in Sources */,
 				E91527AB2A6FC33100274430 /* SettingViewModel.swift in Sources */,
 				E91527B52A6FD81000274430 /* CollectionLayout.swift in Sources */,
 				E91527A52A6FC31000274430 /* ListViewModel.swift in Sources */,
+				E90E63DF2A72513D002A71B6 /* AddGifticonPlaceHolderView.swift in Sources */,
 				E915279B2A6FBF1D00274430 /* HomeCoordinator.swift in Sources */,
 				E91527532A6FB76F00274430 /* AppDelegate.swift in Sources */,
 				E91527B92A6FDA9800274430 /* HomeSection.swift in Sources */,

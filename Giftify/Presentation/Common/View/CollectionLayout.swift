@@ -11,6 +11,7 @@ import UIKit
 enum CollectionLayout: Int, CaseIterable {
     case home
     case list
+    case addGifticon
     
     var appOffsetWidth: CGFloat {
         return UIScreen.main.bounds.width / 50
@@ -26,6 +27,8 @@ enum CollectionLayout: Int, CaseIterable {
             return index == 0 ? self.generateNearSortLayout() : self.generateDDaySortLayout()
         case .list:
             return index == 0 ? self.generateNearSortLayout() : self.generateDDaySortLayout()
+        case .addGifticon:
+            return index == 0 ? self.generateAddGifticonLayout() : self.generateAddGifticonLayout() 
         }
     }
     
@@ -79,6 +82,28 @@ enum CollectionLayout: Int, CaseIterable {
         
         section.boundarySupplementaryItems = [header]
         section.contentInsets = NSDirectionalEdgeInsets(top: 6, leading: 6, bottom: 6, trailing: 6)
+        return section
+    }
+    
+    private func generateAddGifticonLayout() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalHeight(1),
+            heightDimension: .fractionalHeight(1)
+        )
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalHeight(1),
+            heightDimension: .fractionalHeight(1)
+        )
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .groupPagingCentered
+        section.interGroupSpacing = 10
+        
+//        let layout = UICollectionViewCompositionalLayout(section: section)
+        
         return section
     }
 }

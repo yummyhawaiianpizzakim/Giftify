@@ -101,7 +101,7 @@ private extension HomeViewController {
         return layout
     }
     
-    func generateSnapshot(dataSources: [MainDataSource]) -> Snapshot {
+    func generateSnapshot(dataSources: [HomeDataSource]) -> Snapshot {
         var snapshot = Snapshot()
 //        dataSources.forEach { items in
 //            items.forEach { section, values in
