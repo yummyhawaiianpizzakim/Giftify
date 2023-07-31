@@ -36,9 +36,11 @@ class HomeViewController: UIViewController {
     lazy var addGifticonButton: UIButton = {
         let button = UIButton()
         let imageSize = CGSize(width: 60, height: 60)
+        button.frame.size = CGSize(width: 60, height: 60)
         button.setImage(UIImage(systemName: "plus.app.fill"), for: .normal)
         button.imageView?.contentMode = .scaleAspectFill
         button.backgroundColor = .orange
+        button.tintColor = .white
         button.layer.cornerRadius = 4
         return button
     }()

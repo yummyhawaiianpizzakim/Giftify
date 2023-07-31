@@ -123,11 +123,35 @@ private extension AddGifticonViewController {
                     print("tap addBuGifti")
                     self?.checkAccessForPHPicker()
                 } else {
+//                    print(indexPath.item, indexPath.row)
                     self?.viewModel?.tapImage.accept(indexPath.item)
                 }
             })
             .disposed(by: disposeBag)
 
+        output?.strings.asDriver(onErrorJustReturn: [])
+            .drive(onNext: {[weak self] strings in
+                if !strings.isEmpty {
+                    self?.addGifticonTextView.titleTextField.text = strings[2]
+                    self?.addGifticonTextView.brandTextField.text = strings[0]
+                }
+            })
+            .disposed(by: self.disposeBag)
+        
+        output?.expiredDate.asDriver(onErrorJustReturn: Date())
+            .drive(onNext: {[weak self] date in
+                let formatter = DateFormatter()
+                formatter.dateFormat = "yyyy-MM-dd"
+                let string = formatter.string(from: date)
+                self?.addGifticonTextView.expiredDateTextField.text = string
+            })
+            .disposed(by: self.disposeBag)
+        
+        output?.barcodeNym.asDriver(onErrorJustReturn: "")
+            .drive(onNext: {[weak self] string in
+                self?.addGifticonTextView.barCodeTextField.text = string
+            })
+            .disposed(by: self.disposeBag)
         
     }
     
