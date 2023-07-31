@@ -16,6 +16,9 @@
 		E90E63E32A725976002A71B6 /* GifticonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63E22A725976002A71B6 /* GifticonImage.swift */; };
 		E90E63E52A7263CE002A71B6 /* AddGifticonCollectionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63E42A7263CE002A71B6 /* AddGifticonCollectionButtonCell.swift */; };
 		E90E63E72A73A404002A71B6 /* AddGiftiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63E62A73A404002A71B6 /* AddGiftiTextView.swift */; };
+		E90E63E92A73C0D3002A71B6 /* Vision.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63E82A73C0D3002A71B6 /* Vision.swift */; };
+		E90E63ED2A74F4E7002A71B6 /* ExpiredParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63EC2A74F4E7002A71B6 /* ExpiredParser.swift */; };
+		E90E63EF2A75036D002A71B6 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63EE2A75036D002A71B6 /* TextRecognizer.swift */; };
 		E91527532A6FB76F00274430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527522A6FB76F00274430 /* AppDelegate.swift */; };
 		E91527552A6FB76F00274430 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527542A6FB76F00274430 /* SceneDelegate.swift */; };
 		E91527572A6FB76F00274430 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527562A6FB76F00274430 /* ViewController.swift */; };
@@ -85,6 +88,9 @@
 		E90E63E22A725976002A71B6 /* GifticonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifticonImage.swift; sourceTree = "<group>"; };
 		E90E63E42A7263CE002A71B6 /* AddGifticonCollectionButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGifticonCollectionButtonCell.swift; sourceTree = "<group>"; };
 		E90E63E62A73A404002A71B6 /* AddGiftiTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGiftiTextView.swift; sourceTree = "<group>"; };
+		E90E63E82A73C0D3002A71B6 /* Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
+		E90E63EC2A74F4E7002A71B6 /* ExpiredParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiredParser.swift; sourceTree = "<group>"; };
+		E90E63EE2A75036D002A71B6 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
 		E915274F2A6FB76F00274430 /* Giftify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giftify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91527522A6FB76F00274430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E91527542A6FB76F00274430 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +193,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E90E63EA2A74F48C002A71B6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E90E63EB2A74F4A1002A71B6 /* Service */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E90E63EB2A74F4A1002A71B6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E90E63EC2A74F4E7002A71B6 /* ExpiredParser.swift */,
+				E90E63EE2A75036D002A71B6 /* TextRecognizer.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		E91527462A6FB76F00274430 = {
 			isa = PBXGroup;
 			children = (
@@ -212,8 +235,9 @@
 		E91527512A6FB76F00274430 /* Giftify */ = {
 			isa = PBXGroup;
 			children = (
-				E91527CA2A7129BD00274430 /* InfraStructure */,
 				E91527822A6FB96B00274430 /* Application */,
+				E91527CA2A7129BD00274430 /* InfraStructure */,
+				E90E63EA2A74F48C002A71B6 /* Data */,
 				E91527B62A6FDA7E00274430 /* Domain */,
 				E91527892A6FBB0100274430 /* Presentation */,
 				E91527582A6FB76F00274430 /* Main.storyboard */,
@@ -464,6 +488,7 @@
 			isa = PBXGroup;
 			children = (
 				E91527CB2A7129D600274430 /* MLKit.swift */,
+				E90E63E82A73C0D3002A71B6 /* Vision.swift */,
 			);
 			path = InfraStructure;
 			sourceTree = "<group>";
@@ -713,6 +738,7 @@
 				E91527842A6FB99600274430 /* DIContainer.swift in Sources */,
 				E91527C72A71033000274430 /* AddGifticonViewController.swift in Sources */,
 				E90E63E52A7263CE002A71B6 /* AddGifticonCollectionButtonCell.swift in Sources */,
+				E90E63E92A73C0D3002A71B6 /* Vision.swift in Sources */,
 				E91527CC2A7129D600274430 /* MLKit.swift in Sources */,
 				E91527A32A6FC30600274430 /* ListViewController.swift in Sources */,
 				E91527C92A7107C600274430 /* AddGifticonCoordinator.swift in Sources */,
@@ -723,6 +749,7 @@
 				E915279F2A6FBFD000274430 /* HomeViewModel.swift in Sources */,
 				E915278D2A6FBB4800274430 /* TabBarCoordinator.swift in Sources */,
 				E90E63E72A73A404002A71B6 /* AddGiftiTextView.swift in Sources */,
+				E90E63EF2A75036D002A71B6 /* TextRecognizer.swift in Sources */,
 				E91527BB2A6FE44E00274430 /* Gifticon.swift in Sources */,
 				E91527862A6FBA2D00274430 /* CoordinatorProtocol.swift in Sources */,
 				E91527AE2A6FCC4500274430 /* NearSortHomeCollectionCell.swift in Sources */,
@@ -732,6 +759,7 @@
 				E90E63E32A725976002A71B6 /* GifticonImage.swift in Sources */,
 				E91527B22A6FD34800274430 /* NearSortHeaderView.swift in Sources */,
 				E90E63E12A7252E3002A71B6 /* AddGifticonSection.swift in Sources */,
+				E90E63ED2A74F4E7002A71B6 /* ExpiredParser.swift in Sources */,
 				E91527A12A6FC2BA00274430 /* ListCoordinator.swift in Sources */,
 				E91527AB2A6FC33100274430 /* SettingViewModel.swift in Sources */,
 				E91527B52A6FD81000274430 /* CollectionLayout.swift in Sources */,

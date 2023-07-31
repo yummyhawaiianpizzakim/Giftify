@@ -14,11 +14,14 @@ typealias AddGifticonDataSource = [AddGificonSection: [AddGificonSection.Item]]
 
 class AddGifticonViewModel {
     let mlKit = MLKit()
+    let vision = Vision()
+    let expiredParser = ExpiredParser()
+    let barcodeParser = BarcodeParser()
     let disposeBag = DisposeBag()
     
     let imageData = BehaviorRelay<[AddGifticonViewController.Cell]>(value: [.addButton])
     
-    let tapImage = BehaviorRelay<Int>(value: 0)
+    let tapImage = PublishRelay<Int>()
     
     struct Input {
 //        let didTapAddButton: Observable<Void>
@@ -30,6 +33,9 @@ class AddGifticonViewModel {
     
     struct Output {
         let dataSources = BehaviorRelay<[AddGifticonDataSource]>(value: [])
+        let strings = PublishRelay<[String]>()
+        let expiredDate = PublishRelay<Date>()
+        let barcodeNym = PublishRelay<String>()
     }
     
 //    func setActions(actions: HomeViewModelActions) {
@@ -51,8 +57,38 @@ class AddGifticonViewModel {
 //                print(strings)
 //            }
 //            .disposed(by: self.disposeBag)
+//        let datass = self.imageData.value.compactMap { $0.data }
+//        let images = [UIImage]()
+//        datass.forEach { data in
+//            let image = UIImage(data: data, scale: 0.9)
+//        }
+        self.tapImage.withUnretained(self).subscribe { owner, int in
+//            print(int)
+            let datas = owner.imageData.value.compactMap { cell in
+                cell.data
+            }
+//            let data = datas[int-1]
+//            print(data.first)
+            owner.vision.recognizeText(data: datas[int-1])
+//            owner.vision.recognizeBarcode(data: datas[int-1])
+            let nospacingStrings = owner.vision.filteredText.value.compactMap { string in
+                string.replacingOccurrences(of: " ", with: "")
+            }
+//            let expired = owner.expiredParser.parseExpiredDate(inputs: owner.vision.filteredText.value)
+            let expired = owner.expiredParser.parseExpiredDate(inputs: nospacingStrings)
+            print("expired: \(expired.expired)")
+            print("filtedStringsAfterExpired: \(expired.filtered)")
+            output.expiredDate.accept(expired.expired)
+            
+            let barcode = owner.barcodeParser.parseBarcode(inputs: expired.filtered)
+            print(barcode.barcode)
+            output.barcodeNym.accept(barcode.barcode)
+        }
+        .disposed(by: self.disposeBag)
         
-        
+        self.vision.testText.asObservable()
+            .bind(to: output.strings)
+            .disposed(by: self.disposeBag)
         
         return output
     }
