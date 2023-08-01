@@ -22,15 +22,18 @@ class DIContainer {
     }
     
     func registerInfraStructure() {
+        self.registerFireBaseNetworkService()
     }
     
     func registerService() {
     }
     
     func registerRepository() {
+        self.registerAuthRepository()
     }
     
     func registerUseCase() {
+        self.registerSignInUseCase()
     }
     
     func registerViewModel() {
@@ -38,6 +41,17 @@ class DIContainer {
         self.registerListViewModel()
         self.registerSettingViewModel()
         self.registerAddGifticonViewModel()
+        self.registerSignInViewModel()
+        self.registerSignUpViewModel()
+    }
+}
+
+extension DIContainer {
+    func registerFireBaseNetworkService() {
+        self.container.register(FireBaseNetworkServiceProtocol.self) { resolver in
+            return FireBaseNetworkService()
+        }
+        .inObjectScope(.container)
     }
 }
 
@@ -46,15 +60,23 @@ extension DIContainer {
 }
 
 extension DIContainer {
-    
+    func registerAuthRepository() {
+        self.container.register(AuthRepositoryProtocol.self) { resolver in
+            let fireBaseNetworkService = resolver.resolve(FireBaseNetworkServiceProtocol.self)
+            return AuthRepository(fireBaseNetworkService: fireBaseNetworkService!)
+        }
+        .inObjectScope(.container)
+    }
 }
 
 extension DIContainer {
-    
-}
-
-extension DIContainer {
-    
+    func registerSignInUseCase() {
+        self.container.register(SignInUseCaseProtocol.self) { resolver in
+            let authRepository = resolver.resolve(AuthRepositoryProtocol.self)
+            return SignInUseCase(authRepository: authRepository!)
+        }
+        .inObjectScope(.container)
+    }
 }
 
 extension DIContainer {
@@ -82,6 +104,22 @@ extension DIContainer {
     func registerAddGifticonViewModel() {
         self.container.register(AddGifticonViewModel.self) { resolver in
             return AddGifticonViewModel()
+        }
+        .inObjectScope(.graph)
+    }
+    
+    func registerSignInViewModel() {
+        self.container.register(SignInViewModel.self) { resolver in
+            let signInUseCase = resolver.resolve(SignInUseCaseProtocol.self)
+            return SignInViewModel(signInUseCase: signInUseCase!)
+        }
+        .inObjectScope(.graph)
+    }
+    
+    func registerSignUpViewModel() {
+        self.container.register(SignUpViewModel.self) { resolver in
+            
+            return SignUpViewModel()
         }
         .inObjectScope(.graph)
     }

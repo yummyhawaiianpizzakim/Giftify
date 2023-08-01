@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth
+import GoogleSignIn
 
 class AppCoordinator: CoordinatorProtocol {
     
@@ -20,28 +22,43 @@ class AppCoordinator: CoordinatorProtocol {
 
     let container = DIContainer.shared.container
     
-    var window: UIWindow?
+    var navigation: UINavigationController
     
-    init(window: UIWindow?) {
-        self.window = window
+    init(navigation: UINavigationController) {
+        self.navigation = navigation
     }
 
     func start() {
-        self.showTabBarFlow()
+        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+          if error != nil || user == nil {
+            // Show the app's signed-out state.
+              self.showSignInFlow()
+          } else {
+            // Show the app's signed-in state.
+              self.showTabBarFlow()
+          }
+        }
+//        self.showSignInFlow()
+//        self.showTabBarFlow()
     }
 
 }
 
 extension AppCoordinator {
     func showTabBarFlow() {
-        let navigation = UINavigationController()
-        self.window?.rootViewController = navigation
-        let tabBarCoordinator = TabBarCoordinator(navigationController: navigation)
+        let tabBarCoordinator = TabBarCoordinator(navigationController: self.navigation)
         tabBarCoordinator.finishDelegate = self
         tabBarCoordinator.start()
         childCoordinators.append(tabBarCoordinator)
         
-        self.window?.makeKeyAndVisible()
+    }
+    
+    func showSignInFlow() {
+        let signInCoordinator = SignInCoordinator(navigation: self.navigation)
+        signInCoordinator.finishDelegate = self
+        signInCoordinator.start()
+        childCoordinators.append(signInCoordinator)
+        
     }
 }
 
@@ -50,5 +67,19 @@ extension AppCoordinator: CoordinatorFinishDelegate {
         self.childCoordinators = childCoordinators.filter({ coordinator in
             coordinator.type != childCoordinator.type
         })
+        
+//        self.navigation.view.backgroundColor = .systemBackground
+        self.navigation.viewControllers.removeAll()
+        
+        switch childCoordinator.type {
+        case .tab:
+            self.showSignInFlow()
+        case .signIn:
+            self.showTabBarFlow()
+        default:
+            break
+        }
+        
     }
+    
 }
