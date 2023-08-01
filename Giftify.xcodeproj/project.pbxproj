@@ -19,6 +19,19 @@
 		E90E63E92A73C0D3002A71B6 /* Vision.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63E82A73C0D3002A71B6 /* Vision.swift */; };
 		E90E63ED2A74F4E7002A71B6 /* ExpiredParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63EC2A74F4E7002A71B6 /* ExpiredParser.swift */; };
 		E90E63EF2A75036D002A71B6 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63EE2A75036D002A71B6 /* TextRecognizer.swift */; };
+		E90E63F12A77CFF8002A71B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E90E63F02A77CFF8002A71B6 /* GoogleService-Info.plist */; };
+		E90E63F82A77D21C002A71B6 /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63F72A77D21C002A71B6 /* SignInCoordinator.swift */; };
+		E90E63FA2A77D246002A71B6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63F92A77D246002A71B6 /* SignInViewController.swift */; };
+		E90E63FC2A77D2C2002A71B6 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63FB2A77D2C2002A71B6 /* SignInViewModel.swift */; };
+		E90E64002A77EA15002A71B6 /* SignInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E63FF2A77EA15002A71B6 /* SignInUseCase.swift */; };
+		E90E64042A77ECCA002A71B6 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E64032A77ECCA002A71B6 /* AuthRepository.swift */; };
+		E90E64082A77ED3C002A71B6 /* FireBaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E64072A77ED3C002A71B6 /* FireBaseNetworkService.swift */; };
+		E90E640B2A78D40F002A71B6 /* DTOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E640A2A78D40F002A71B6 /* DTOProtocol.swift */; };
+		E90E640D2A78D442002A71B6 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E640C2A78D442002A71B6 /* UserDTO.swift */; };
+		E90E640F2A78DD27002A71B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E640E2A78DD27002A71B6 /* User.swift */; };
+		E90E64152A78F16F002A71B6 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E64142A78F16F002A71B6 /* SignUpCoordinator.swift */; };
+		E90E64172A78F285002A71B6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E64162A78F285002A71B6 /* SignUpViewController.swift */; };
+		E90E64192A78F306002A71B6 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E64182A78F306002A71B6 /* SignUpViewModel.swift */; };
 		E91527532A6FB76F00274430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527522A6FB76F00274430 /* AppDelegate.swift */; };
 		E91527552A6FB76F00274430 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527542A6FB76F00274430 /* SceneDelegate.swift */; };
 		E91527572A6FB76F00274430 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91527562A6FB76F00274430 /* ViewController.swift */; };
@@ -91,6 +104,19 @@
 		E90E63E82A73C0D3002A71B6 /* Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
 		E90E63EC2A74F4E7002A71B6 /* ExpiredParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiredParser.swift; sourceTree = "<group>"; };
 		E90E63EE2A75036D002A71B6 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		E90E63F02A77CFF8002A71B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E90E63F72A77D21C002A71B6 /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
+		E90E63F92A77D246002A71B6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E90E63FB2A77D2C2002A71B6 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		E90E63FF2A77EA15002A71B6 /* SignInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
+		E90E64032A77ECCA002A71B6 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		E90E64072A77ED3C002A71B6 /* FireBaseNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseNetworkService.swift; sourceTree = "<group>"; };
+		E90E640A2A78D40F002A71B6 /* DTOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOProtocol.swift; sourceTree = "<group>"; };
+		E90E640C2A78D442002A71B6 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		E90E640E2A78DD27002A71B6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E90E64142A78F16F002A71B6 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
+		E90E64162A78F285002A71B6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E90E64182A78F306002A71B6 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		E915274F2A6FB76F00274430 /* Giftify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giftify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91527522A6FB76F00274430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E91527542A6FB76F00274430 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +222,8 @@
 		E90E63EA2A74F48C002A71B6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E90E64092A78D39C002A71B6 /* DTO */,
+				E90E64012A77ECA9002A71B6 /* Repository */,
 				E90E63EB2A74F4A1002A71B6 /* Service */,
 			);
 			path = Data;
@@ -208,6 +236,132 @@
 				E90E63EE2A75036D002A71B6 /* TextRecognizer.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		E90E63F22A77D1B2002A71B6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E90E64102A78F120002A71B6 /* SignUp */,
+				E90E63F32A77D1B7002A71B6 /* SignIn */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E90E63F32A77D1B7002A71B6 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				E90E63F62A77D205002A71B6 /* ViewModel */,
+				E90E63F42A77D1C2002A71B6 /* ViewController */,
+				E90E63F52A77D1D7002A71B6 /* Coordinator */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		E90E63F42A77D1C2002A71B6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E90E63F92A77D246002A71B6 /* SignInViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E90E63F52A77D1D7002A71B6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E90E63F72A77D21C002A71B6 /* SignInCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E90E63F62A77D205002A71B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E90E63FB2A77D2C2002A71B6 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E90E63FD2A77E90B002A71B6 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				E90E63FE2A77E9ED002A71B6 /* Auth */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		E90E63FE2A77E9ED002A71B6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E90E63FF2A77EA15002A71B6 /* SignInUseCase.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E90E64012A77ECA9002A71B6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E90E64022A77ECB1002A71B6 /* Auth */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E90E64022A77ECB1002A71B6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E90E64032A77ECCA002A71B6 /* AuthRepository.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E90E64052A77ED03002A71B6 /* FireBase */ = {
+			isa = PBXGroup;
+			children = (
+				E90E64072A77ED3C002A71B6 /* FireBaseNetworkService.swift */,
+			);
+			path = FireBase;
+			sourceTree = "<group>";
+		};
+		E90E64092A78D39C002A71B6 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				E90E640A2A78D40F002A71B6 /* DTOProtocol.swift */,
+				E90E640C2A78D442002A71B6 /* UserDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		E90E64102A78F120002A71B6 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E90E64132A78F159002A71B6 /* ViewModel */,
+				E90E64122A78F142002A71B6 /* ViewController */,
+				E90E64112A78F12C002A71B6 /* Coordinator */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		E90E64112A78F12C002A71B6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E90E64142A78F16F002A71B6 /* SignUpCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E90E64122A78F142002A71B6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E90E64162A78F285002A71B6 /* SignUpViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E90E64132A78F159002A71B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E90E64182A78F306002A71B6 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E91527462A6FB76F00274430 = {
@@ -237,13 +391,13 @@
 			children = (
 				E91527822A6FB96B00274430 /* Application */,
 				E91527CA2A7129BD00274430 /* InfraStructure */,
-				E90E63EA2A74F48C002A71B6 /* Data */,
 				E91527B62A6FDA7E00274430 /* Domain */,
 				E91527892A6FBB0100274430 /* Presentation */,
 				E91527582A6FB76F00274430 /* Main.storyboard */,
 				E915275B2A6FB77200274430 /* Assets.xcassets */,
 				E91527CD2A712B5A00274430 /* testImageBBQ.jpeg */,
 				E915275D2A6FB77200274430 /* LaunchScreen.storyboard */,
+				E90E63F02A77CFF8002A71B6 /* GoogleService-Info.plist */,
 				E91527602A6FB77200274430 /* Info.plist */,
 			);
 			path = Giftify;
@@ -282,6 +436,7 @@
 		E91527892A6FBB0100274430 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E90E63F22A77D1B2002A71B6 /* Auth */,
 				E91527C02A71004100274430 /* AddGifticon */,
 				E91527962A6FBF0000274430 /* Setting */,
 				E91527922A6FBEE300274430 /* List */,
@@ -433,6 +588,8 @@
 		E91527B62A6FDA7E00274430 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				E90E63EA2A74F48C002A71B6 /* Data */,
+				E90E63FD2A77E90B002A71B6 /* UseCase */,
 				E91527B72A6FDA8600274430 /* Model */,
 			);
 			path = Domain;
@@ -445,6 +602,7 @@
 				E91527BA2A6FE44E00274430 /* Gifticon.swift */,
 				E90E63E02A7252E3002A71B6 /* AddGifticonSection.swift */,
 				E90E63E22A725976002A71B6 /* GifticonImage.swift */,
+				E90E640E2A78DD27002A71B6 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -487,6 +645,7 @@
 		E91527CA2A7129BD00274430 /* InfraStructure */ = {
 			isa = PBXGroup;
 			children = (
+				E90E64052A77ED03002A71B6 /* FireBase */,
 				E91527CB2A7129D600274430 /* MLKit.swift */,
 				E90E63E82A73C0D3002A71B6 /* Vision.swift */,
 			);
@@ -604,6 +763,7 @@
 			files = (
 				E915275F2A6FB77200274430 /* LaunchScreen.storyboard in Resources */,
 				E91527CE2A712B5A00274430 /* testImageBBQ.jpeg in Resources */,
+				E90E63F12A77CFF8002A71B6 /* GoogleService-Info.plist in Resources */,
 				E915275C2A6FB77200274430 /* Assets.xcassets in Resources */,
 				E915275A2A6FB76F00274430 /* Main.storyboard in Resources */,
 			);
@@ -733,6 +893,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90E64172A78F285002A71B6 /* SignUpViewController.swift in Sources */,
 				E91527882A6FBAAA00274430 /* AppCoordinator.swift in Sources */,
 				E91527BD2A7012F400274430 /* DDaySortHomeCollectionCell.swift in Sources */,
 				E91527842A6FB99600274430 /* DIContainer.swift in Sources */,
@@ -747,21 +908,32 @@
 				E91527A92A6FC32700274430 /* SettingViewController.swift in Sources */,
 				E91527BF2A7029B000274430 /* DDaySortHeaderView.swift in Sources */,
 				E915279F2A6FBFD000274430 /* HomeViewModel.swift in Sources */,
+				E90E640D2A78D442002A71B6 /* UserDTO.swift in Sources */,
 				E915278D2A6FBB4800274430 /* TabBarCoordinator.swift in Sources */,
 				E90E63E72A73A404002A71B6 /* AddGiftiTextView.swift in Sources */,
 				E90E63EF2A75036D002A71B6 /* TextRecognizer.swift in Sources */,
+				E90E63FC2A77D2C2002A71B6 /* SignInViewModel.swift in Sources */,
 				E91527BB2A6FE44E00274430 /* Gifticon.swift in Sources */,
+				E90E64082A77ED3C002A71B6 /* FireBaseNetworkService.swift in Sources */,
 				E91527862A6FBA2D00274430 /* CoordinatorProtocol.swift in Sources */,
+				E90E640B2A78D40F002A71B6 /* DTOProtocol.swift in Sources */,
+				E90E640F2A78DD27002A71B6 /* User.swift in Sources */,
+				E90E64152A78F16F002A71B6 /* SignUpCoordinator.swift in Sources */,
 				E91527AE2A6FCC4500274430 /* NearSortHomeCollectionCell.swift in Sources */,
 				E91527C52A71031300274430 /* AddGifticonViewModel.swift in Sources */,
+				E90E64042A77ECCA002A71B6 /* AuthRepository.swift in Sources */,
 				E915279D2A6FBF7400274430 /* HomeViewController.swift in Sources */,
+				E90E64002A77EA15002A71B6 /* SignInUseCase.swift in Sources */,
 				E90E63DD2A724CD9002A71B6 /* AddGifticonImageCollectionCell.swift in Sources */,
 				E90E63E32A725976002A71B6 /* GifticonImage.swift in Sources */,
 				E91527B22A6FD34800274430 /* NearSortHeaderView.swift in Sources */,
+				E90E64192A78F306002A71B6 /* SignUpViewModel.swift in Sources */,
 				E90E63E12A7252E3002A71B6 /* AddGifticonSection.swift in Sources */,
 				E90E63ED2A74F4E7002A71B6 /* ExpiredParser.swift in Sources */,
 				E91527A12A6FC2BA00274430 /* ListCoordinator.swift in Sources */,
+				E90E63FA2A77D246002A71B6 /* SignInViewController.swift in Sources */,
 				E91527AB2A6FC33100274430 /* SettingViewModel.swift in Sources */,
+				E90E63F82A77D21C002A71B6 /* SignInCoordinator.swift in Sources */,
 				E91527B52A6FD81000274430 /* CollectionLayout.swift in Sources */,
 				E91527A52A6FC31000274430 /* ListViewModel.swift in Sources */,
 				E90E63DF2A72513D002A71B6 /* AddGifticonPlaceHolderView.swift in Sources */,
@@ -948,6 +1120,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Giftify/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "앨범 접근이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -977,6 +1151,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Giftify/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "앨범 접근이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

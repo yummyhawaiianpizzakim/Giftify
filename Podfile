@@ -12,7 +12,10 @@ target 'Giftify' do
   pod 'Alamofire'
   pod 'Kingfisher'
   pod 'Swinject'
-
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
+  pod 'FirebaseFirestoreSwift'
+  pod 'GoogleSignIn'
 
      post_install do |installer|
          installer.generated_projects.each do |project|
